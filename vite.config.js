@@ -1,11 +1,14 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  server: {
-    open: true
-  },
-  build: {
-    outDir: 'dist',
-    assetsDir: 'assets'
-  }
+    server: {
+        open: true
+    },
+    build: {
+        outDir: 'dist',
+        assetsDir: 'assets'
+    },
+    define: {
+        'process.env': {}
+    }
 });
